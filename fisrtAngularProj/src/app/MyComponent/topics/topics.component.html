@@ -1,0 +1,22 @@
+<!-- <ul *ngFor="let topic of topics">
+    <li>{{topic.id}}</li>
+</ul> -->
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Topic title</th>
+            <th scope="col">Images</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let topic of topics">
+            <th scope="row">{{topic.id}}</th>
+            <td>{{topic.name}}</td>
+            <!-- <td><img src=`${{topic.image}}` alt="" style="height:45px;width:45px" /></td> -->
+        </tr>
+
+    </tbody>
+</table>
